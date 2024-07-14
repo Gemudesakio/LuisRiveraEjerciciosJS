@@ -219,24 +219,24 @@
 //     console.log(piso1);               
 // }
 
-// 16-  Dado un array de 10 numeros desordenados, realizar un programa que imprima por pantalla el array ordenado.
+//16-  Dado un array de 10 numeros desordenados, realizar un programa que imprima por pantalla el array ordenado.
 
-// let array = [5,7,8,9,6,4,3,2,1,10]
-// let arrayOrden=[]
-// let menor = array[0]
-// let indice =0
+let array = [5,7,8,9,6,4,3,2,1,10]
+let arrayOrden=[]
+let menor = array[0]
+let indice =0
 
-// for(let j=0; j<10; j++){
-//    for (let i=0; i< array.length; i++){
-//       // encontramos el menor
-//          if(array[i] < menor ){
-//             menor = array[i] 
-//          } 
-//       }
-//     indice = array.indexOf(menor)
-//     array.splice(indice,1)
-//     arrayOrden.push(menor)
-//    menor = array[0]
-// }
+for(let j=0; j<10; j++){
+   for (let i=0; i< array.length; i++){
+      // encontramos el menor
+         if(array[i] < menor ){
+            menor = array[i] 
+         } 
+      }
+    indice = array.indexOf(menor)
+    array.splice(indice,1)
+    arrayOrden.push(menor)
+   menor = array[0]
+}
 
-// console.log(arrayOrden)
+console.log(arrayOrden)
